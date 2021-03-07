@@ -1,0 +1,31 @@
+.why-yesnogame{
+    width: 100vw;
+    min-height: 65vh;
+    background-color: #ffdbd9;
+}
+.why-yesnogame-heading{
+    margin: 0 auto;
+    display: block;
+    font-size: 21px;
+    text-align: center;
+    color: #EA5F5F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+  .icon-holder{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
+  .icon-holder_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
