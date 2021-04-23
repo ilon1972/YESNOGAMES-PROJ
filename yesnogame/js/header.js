@@ -1,6 +1,7 @@
-document.querySelector('#elastic').oninput = function () {
+// live search
+document.querySelector('#yesnogameLinkInput').oninput = function () {
     let val = this.value.trim().toLowerCase();
-    let elasticItems = document.querySelectorAll('.elastic li a');
+    let elasticItems = document.querySelectorAll('.yesnogame-links li a');
     if (val != '') {
         elasticItems.forEach(function (elem) {
             if (elem.innerText.search(val) == -1) {
@@ -21,7 +22,26 @@ document.querySelector('#elastic').oninput = function () {
         });
     }
 }
-
 function insertMark(string, pos, len) {
     return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len);
 }
+
+// smooth achnors
+const $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+
+// mobile menu cntrl                    
+const burger = document.getElementById("burger");
+const nav = document.getElementById("navlist");
+const navSlide = ()=>{
+    burger.addEventListener("click", ()=>{
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+    })
+}
+navSlide();

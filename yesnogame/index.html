@@ -4,86 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./slideshow.css">
-  <link rel="stylesheet" href="./flip.css">
+  <title>Documуnt</title>
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/why-yesnogame.css">
+  <link rel="stylesheet" href="./style/slideshow.css">
+  <link rel="stylesheet" href="./style/flip.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper">
-    <header id="header">
+    <header class="header" id="header">
       <nav class="header-bar">
-        <div class="container flex">
-          <div class="logo">
-            <img src="./img/puzzle.png" alt="" width="40" height="40">
-          </div>
+        <div class="container">
+              <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
 
-          <ul id="navlist" class="navlist flex">
-            <li class="navli">
-              <a href="#header" class="achnor navlink decnone menutext">Дом</a>
-            </li>
-            <li class="vl"></li>
-            <li class="navli">
-              <a href="#whyyesnogame" class="achnor navlink decnone menutext">Зачем?</a>
-            </li>
-            <li class="vl"></li>
-            <li class="navli">
-              <a href="#about" class="achnor navlink decnone menutext">Правила</a>
-            </li>
-            <li class="vl"></li>
-            <li class="navli">
-              <a href="#yesnogames" class="achnor navlink decnone menutext">Данетки</a>
-            </li>
-          </ul>
-
-          <div class="dropdown">
-            <div class="logo-search">
-              <img src="./img/search-icon.png" alt="" width="30" height="30">
-            </div>
-
-            <div class="dropdown-content">
-              <form class="form" action="index.html" method="post">
-                <input autocomplete="off" type="text" id="elastic">
-              </form>
-
-              <ul class="elastic">
-                <li><a class="hide textwhite decnone" href="#first-yesnogame">єкзамен</a></li>
-                <li><a class="hide textwhite decnone" href="#second-yesnogame">случай в баре</a></li>
-                <li><a class="hide textwhite decnone" href="#third-yesnogame">лифт</a></li>
-                <li><a class="hide textwhite decnone" href="#fourth-yesnogame">необичная пушка</a></li>
-                <li><a class="hide textwhite decnone" href="#">смертельние туфли</a></li>
-                <li><a class="hide textwhite decnone" href="#">смерть: отложено</a></li>
-                <li><a class="hide textwhite decnone" href="#">викуп в будке</a></li>
-                <li><a class="hide textwhite decnone" href="#">смертельний вистрел</a></li>
-                <li><a class="hide textwhite decnone" href="#">ужасний чердак</a></li>
-                <li><a class="hide textwhite decnone" href="#">без света</a></li>
-                <li><a class="hide textwhite decnone" href="#">клас отличников</a></li>
+              <div class="logo">
+                <img src="./img/logo.svg" alt="" width="30" height="30">
+              </div>
+    
+              <ul id="navlist" class="navlist">
+                <li class="navli">
+                  <a href="#header" class="navlink">Дом</a>
+                </li>
+                <li class="link-space"></li>
+                <li class="navli">
+                  <a href="#whyyesnogame" class="navlink">Зачем?</a>
+                </li>
+                <li class="link-space"></li>
+                <li class="navli">
+                  <a href="#about" class="navlink">Правила</a>
+                </li>
+                <li class="link-space"></li>
+                <li class="navli">
+                  <a href="#yesnogames" class="navlink">Данетки</a>
+                </li>
               </ul>
-
+  
+            <div class="dropdown">
+              <div class="logo-search">
+                <img src="./img/search-icon.svg" alt="" width="30" height="30">
+              </div>
+  
+              <div class="dropdown-content">
+                <form class="form" action="index.html" method="post">
+                  <input autocomplete="off" type="text" class="yesnogame-link-input" id="yesnogameLinkInput">
+                </form>
+  
+                <ul class="yesnogame-links">
+                  <li><a class="hide textwhite decnone" href="#first-yesnogame">єкзамен</a></li>
+                  <li><a class="hide textwhite decnone" href="#second-yesnogame">случай в баре</a></li>
+                  <li><a class="hide textwhite decnone" href="#third-yesnogame">лифт</a></li>
+                  <li><a class="hide textwhite decnone" href="#fourth-yesnogame">необичная пушка</a></li>
+                  <li><a class="hide textwhite decnone" href="#">смертельние туфли</a></li>
+                  <li><a class="hide textwhite decnone" href="#">смерть: отложено</a></li>
+                  <li><a class="hide textwhite decnone" href="#">викуп в будке</a></li>
+                  <li><a class="hide textwhite decnone" href="#">смертельний вистрел</a></li>
+                  <li><a class="hide textwhite decnone" href="#">ужасний чердак</a></li>
+                  <li><a class="hide textwhite decnone" href="#">без света</a></li>
+                  <li><a class="hide textwhite decnone" href="#">клас отличников</a></li>
+                </ul>
+  
+              </div>
             </div>
-          </div>
 
         </div>
       </nav>
 
-      <div class="header-title">
-        <h1 class="h1 m5 maintext">Данетки</h1>
-        <h4 class="h4 m4 maintext">Лутшая игра для поездок</h4>
-        <a href="#"><button class="btntext btn">Подробнее</button></a>
+      <div class="header-title-wrapper">
+        <span class="header-title">Данетки</span>
+        <span class="header-subtitle">Лутшая игра для поездок</span>
+        <a href="#"><button class="header-button">Подробнее</button></a>
       </div>
     </header>
 
     <main>
-      <section id="whyyesnogame">
-
+      <section class="why-yesnogame" id="whyYesnogame">
         <div class="container">
-
-          <h4 class="m4 h4 maintext textalign">Почему данетки?</h4>
-
+          <span class="why-yesnogame-heading">Почему данетки?</span>
           <ul class="icons">
             <li class="icon-holder">
               <div>
@@ -112,7 +116,7 @@
 
       </section>
 
-      <section id="about">
+      <!-- <section id="about">
         <div class="textalign container">
           <h4 class="h4 m4 maintext">Правила</h4>
 
@@ -445,11 +449,11 @@
           <a class="maintext next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>
-      </section>
+      </section> -->
 
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="textalign container">
         <ul class="footer_ul">
           <li class="footer_li"><a href="#"><img class="footer_img" src="./img/facebook.png" alt=""></a></li>
@@ -458,13 +462,10 @@
           <li class="footer_li"><a href="#"><img class="footer_img" src="./img/instagram.png" alt=""></a></li>
         </ul>
         <span class="maintext">@Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat aliquam mollitia illo aperiam architecto.</span>
-    </footer>
+    </footer> -->
   </div>
 
-  <script src="./slideshow.js" type="text/javascript"></script>
-  <script src="./jQwery.js" type="text/javascript"></script>
-  <script src="./yackor.js" type="text/javascript"></script>
-  <script src="./flip.js" type="text/javascript"></script>
-  <script src="./livesearch.js" type="text/javascript"></script>
+  <script src="./js/header.js"></script>
+  <script src=""></script>
 </body>
 </html>
