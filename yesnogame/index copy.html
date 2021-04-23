@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content-wrapper" id="contentWrappper">
+            <h1 class="heading">Bayess calc</h1>
+
+            <div class="a-prob-container">
+                <span class="a-prob-heading">P(A) - </span>
+                <input type="text" class="a-prob-input" id="aProbInput">
+            </div>
+
+            <div class="ba-prob-container">
+                <span class="ba-prob-heading">P(B|A) - </span>
+                <input type="text" class="ba-prob-input" id="baProbInput">
+            </div>
+
+            <div class="b-prob-container">
+                <span class="b-prob-question">Do you have P(B)?</span>
+                <div class="switch-container">
+                    <span>no</span>
+                    <label class="switch-area">
+                        <input type="checkbox" for="toggle" id="toggleCheckbox">
+                        <span class="slider circle"></span>
+                    </label>
+                    <span>yes</span>
+                </div>
+                <div class="b-prob-inputs-wrapper" id="bProbInputsWrapper">
+                    <span class="b-prob-heading">P(notA) - </span>
+                    <input type="text" class="b-prob-input" id="bProbInput">
+                </div>
+            </div>
+
+            <button class="calculate-button" id="calculateButton">Calculate</button>
+
+        </div>
+
+        <span class="name">Made by Danylo Pashuk</span>
+    </div>
+
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>

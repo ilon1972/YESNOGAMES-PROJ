@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(200deg, #ff3d71, #69e4de);
+}
+
+.content-wrapper {
+    width: 400px;
+    min-height: 100px;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    font-size: 36px;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.a-prob-container,
+.ba-prob-container,
+.b-prob-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.a-prob-heading,
+.ba-prob-heading,
+.b-prob-question,
+.b-prob-heading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.a-prob-input,
+.ba-prob-input,
+.b-prob-input {
+    outline: none;
+    border-radius: 7px;
+    padding: 4px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: white;
+}
+
+.calculate-button {
+    display: block;
+    margin: auto;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.answer {
+    display: inline-block;
+    padding-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name {
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+
+.switch-container span {
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.switch-area {
+    position: relative;
+    display: inline-block;
+    margin: 10px auto;
+    width: 85px;
+    height: 27px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+}
+
+.switch-area input {
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 4px;
+    background-color: #fff;
+    -webkit-transition: .5s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(58px);
+    -ms-transform: translateX(58px);
+    transform: translateX(58px);
+}
+
+.slider.circle {
+    border-radius: 40px;
+}
+
+.slider.circle:before {
+    border-radius: 50%;
+}
